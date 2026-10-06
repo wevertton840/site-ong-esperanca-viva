@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Instituto Esperança Viva</title>
+    <!-- Biblioteca Externa: SweetAlert2 via CDN para Modais e Feedback Interativo -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho Fixo da Aplicação -->
+    <header>
+        <div class="cabecalho-texto">
+            <h1>Instituto Esperança Viva</h1>
+            <p>Conheça as nossas ações continuadas em prol da comunidade.</p>
+        </div>
+        
+        <nav aria-label="Navegação Principal" id="menu-principal">
+            <button id="btn-menu-mobile" aria-expanded="false" aria-label="Abrir Menu">
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+            </button>
+
+            <ul id="lista-menu">
+                <li><a href="#/inicio" class="nav-link ativo">Início</a></li>
+                <li class="item-dropdown">
+                    <a href="#/projetos" class="link-dropdown nav-link">Projetos Sociais ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#/projetos?id=projeto-alfabetizacao">Futuro Brilhante</a></li>
+                        <li><a href="#/projetos?id=projeto-capacitacao">Oficinas de Renda</a></li>
+                        <li><a href="#/projetos?id=projeto-alimentacao">Mesa Comunitária</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="#/cadastro" class="btn-cta-nav nav-link">Seja um Voluntário</a>
+        </nav>
+    </header>
+
+    <!-- Contêiner Dinâmico da SPA -->
+    <main id="app">
+        <!-- Os templates das vistas serão injetados aqui via JavaScript -->
+    </main>
+
+    <!-- Rodapé Fixo -->
+    <footer>
+        <p>&copy; 2026 Instituto Esperança Viva - Todos os direitos reservados.</p>
+        <p>Desenvolvido para fortalecer o terceiro setor e a inclusão social.</p>
+    </footer>
+
+    <!-- Script SPA -->
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

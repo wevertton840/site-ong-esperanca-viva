@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Folha de estilo externa -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Instituto Esperança Viva - Projetos Sociais</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+        <header>
+            <div class="cabecalho-texto">
+                <h1>Instituto Esperança Viva</h1>
+                <p>Conheça nossas ações continuadas em prol da nossa comunidade.</p>
+            </div>
+            
+            <nav aria-label="Navegação Principal" id="menu-principal">
+                <!-- restante do menu -->            <button id="btn-menu-mobile" aria-expanded="false" aria-label="Abrir Menu">
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+            </button>
+
+            <ul id="lista-menu">
+                <li><a href="index.html">Início</a></li>
+                <li class="item-dropdown">
+                    <a href="projetos.html" class="link-dropdown ativo">Projetos Sociais ▾</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#projeto-alfabetizacao">Futuro Brilhante</a></li>
+                        <li><a href="projetos.html#projeto-capacitacao">Oficinas de Renda</a></li>
+                        <li><a href="projetos.html#projeto-alimentacao">Mesa Comunitária</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="cadastro.html" class="btn-cta-nav">Seja um Voluntário</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal: Vitrine de Projetos -->
+    <main>
+        <section id="nossos-projetos">
+            <h2>Nossas Iniciativas Solidárias</h2>
+            <p>Através da união de forças comunitárias e voluntariado ativo, mantemos programas focados no desenvolvimento integral de crianças, jovens e famílias.</p>
+
+            <!-- Projeto 1: Usando a tag semântica <article> para conteúdo independente -->
+            <article id="projeto-alfabetizacao">
+                <h3>1. Projeto Futuro Brilhante: Reforço Escolar e Leitura</h3>
+                <figure>
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Instrutora voluntária auxiliando estudantes em uma roda de leitura com livros didáticos">                    <figcaption>Oficinas semanais de leitura e acompanhamento pedagógico.</figcaption>
+                </figure>
+                <p>
+                    Oferece suporte escolar, incentivo à leitura e introdução à informática para mais de 120 crianças no contraturno das aulas regulares.
+                </p>
+                <p><strong>Como apoiar:</strong> Doação de livros infantojuvenis ou atuação como monitor voluntário.</p>
+            </article>
+
+            <hr>
+
+            <!-- Projeto 2 -->
+            <article id="projeto-capacitacao">
+                <h3>2. Projeto Oficinas de Renda: Capacitação Profissional</h3>
+                <figure>
+                <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?auto=format&fit=crop&w=700&q=80" alt="Alunas aprendendo técnicas de costura artesanal em máquinas industriais na oficina comunitária">                    <figcaption>Capacitação prática para geração de renda familiar.</figcaption>
+                </figure>
+                <p>
+                    Cursos rápidos de artesanato, panificação e corte e costura voltados a jovens e mães chefes de família que buscam autonomia financeira.
+                </p>
+                <p><strong>Como apoiar:</strong> Doação de insumos para aulas práticas e instrutores voluntários nas áreas técnicas.</p>
+            </article>
+
+            <hr>
+
+            <!-- Projeto 3 -->
+            <article id="projeto-alimentacao">
+                <h3>3. Mesa Comunitária: Segurança Alimentar</h3>
+                <figure>
+                <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?auto=format&fit=crop&w=700&q=80" alt="Caixas de alimentos e legumes frescos sendo organizados por voluntários para distribuição">                    <figcaption>Distribuição mensal de cestas verdes de produtores rurais locais.</figcaption>
+                </figure>
+                <p>
+                    Campanha permanente de combate à fome que distribui refeições nutritivas e cestas de alimentos para famílias em extrema vulnerabilidade.
+                </p>
+                <p><strong>Como apoiar:</strong> Arrecadação de alimentos não perecíveis e doações financeiras para compras a granel.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Instituto Esperança Viva - Todos os direitos reservados.</p>
+        <p>Juntos por um impacto social duradouro.</p>
+    </footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
+
